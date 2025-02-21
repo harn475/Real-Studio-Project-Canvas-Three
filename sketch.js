@@ -24,7 +24,7 @@ function setup() {
   undoButton.mousePressed(() => lines.pop());
 
    // Create the link button
-   linkButton = createButton('View Wall Drawing #289');
+   linkButton = createButton('View Image');
    linkButton.position(10, 540);
    linkButton.mousePressed(() => window.open('https://massmoca.org/event/walldrawing289/', '_blank'));
   
