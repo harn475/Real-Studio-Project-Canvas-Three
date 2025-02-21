@@ -1,6 +1,8 @@
+// PATIENCE
+
 let textContent = "twenty-four lines from the center, twelve lines from the midpoint of each of the sides, twelve lines from each corner. (The length of the lines and their placement are determined by the drafter.)";
 let lines = [];
-let colorPicker, weightSlider, clearButton, undoButton;
+let colorPicker, weightSlider, clearButton, undoButton, linkButton;
 let drawing = false;
 let drawAreaSize = 600;
 let drawAreaX, drawAreaY;
@@ -20,6 +22,11 @@ function setup() {
   undoButton = createButton('Erase'); // changed to erase based off of function
   undoButton.position(120, 500);
   undoButton.mousePressed(() => lines.pop());
+
+   // Create the link button
+   linkButton = createButton('View Wall Drawing #289');
+   linkButton.position(10, 540);
+   linkButton.mousePressed(() => window.open('https://massmoca.org/event/walldrawing289/', '_blank'));
   
   drawAreaX = windowWidth / 2;
   drawAreaY = (windowHeight - drawAreaSize) / 2;
