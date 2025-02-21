@@ -1,4 +1,4 @@
-let textContent = "A 6-inch (15 cm) grid covering each of the four black walls. White lines to points on the grids. Fourth wall: twenty-four lines from the center, twelve lines from the midpoint of each of the sides, twelve lines from each corner. (The length of the lines and their placement are determined by the drafter.)";
+let textContent = "twenty-four lines from the center, twelve lines from the midpoint of each of the sides, twelve lines from each corner. (The length of the lines and their placement are determined by the drafter.)";
 let lines = [];
 let colorPicker, weightSlider, clearButton, undoButton;
 let drawing = false;
